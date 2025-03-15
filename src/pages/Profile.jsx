@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { auth, logout } from "../firebase";
+import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
 import { getUserData, updateUserSkills, updateUserProfile } from "../models/userModel";
 import "../styles/Profile.css"; // Import the CSS file
