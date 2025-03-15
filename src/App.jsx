@@ -5,7 +5,7 @@ import AuthGuard from "./AuthGaurd";
 
 export default function App() {
   return (
-    <Routes>
+    <Routes basename="/CS4227-Architecture/">
       <Route path="/" element={<Login />} />
       <Route path="" element={<Login />} />
       <Route
