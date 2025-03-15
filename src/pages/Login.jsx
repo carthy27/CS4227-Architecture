@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react"; // Import useState for handling errors
 import CurrentSkills from "../components/CurrentSkills";
 import LearningSkills from "../components/LearningSkills";
+import Navbar from "../components/Navbar";
 export default function Login() {
   const navigate = useNavigate();
   const [error, setError] = useState(null);  // State for storing errors
@@ -29,6 +30,7 @@ export default function Login() {
 
   return (
     <div>
+      <Navbar />
       <CurrentSkills loading={loading} error={error} handleLogin={handleLogin} />
       <LearningSkills loading={loading} error={error} handleLogin={handleLogin} />
     </div>
