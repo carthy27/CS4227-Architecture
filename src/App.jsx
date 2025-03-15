@@ -5,11 +5,11 @@ import AuthGuard from "./AuthGaurd";
 
 export default function App() {
   return (
-    <Routes basename="/CS4227-Architecture/">
-      <Route path="/" element={<Login />} />
-      <Route path="" element={<Login />} />
+    <Routes>
+      <Route index element={<Login />} />
+      <Route path="login" element={<Login />} />
       <Route
-        path="/profile"
+        path="profile"
         element={
           <AuthGuard>
             <Profile />
