@@ -6,7 +6,7 @@ import AuthGuard from "./AuthGaurd";
 export default function App() {
   return (
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route
           path="/profile"
           element={
