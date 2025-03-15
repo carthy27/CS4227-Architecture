@@ -1,6 +1,6 @@
 {
   "name": "skillswapapp",
-  "homepage": "https://carthy27.github.io/CS4227-Architecture",
+  "homepage": "https://carthy27.github.io/CS4227-Architecture/#",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -47,5 +47,4 @@
   "devDependencies": {
     "gh-pages": "^6.3.0"
   }
-
 }
