@@ -18,25 +18,3 @@ export default function App() {
     </Router>
   );
 }
-
-
-function App() {
-  return (
-      <Router>
-          <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/About" element={<About />} />
-              <Route path="/News" element={<News />} />
-
-
-              <Route path="/Workspace" element={<Workspace />} />
-              <Route path="/createWorkspace" element={<CreateWorkspace />} />
-              <Route path="/viewWorkspace" element={<ViewWorkspace />} />
-
-
-              <Route path="/workspaceChat/:id" element={<WorkspaceChat />} />
-
-          </Routes>
-      </Router>
-  );
-}
