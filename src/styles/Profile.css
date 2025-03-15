@@ -1,0 +1,174 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* 📌 src/styles/profile.css */
+.full-screen {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.profile-email {
+    font-size: 1.125rem;
+    color: gray;
+}
+
+.profile-picture {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e939cb;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-right a:hover {
+    background-color: #575757;
+    border-radius: 0.25rem;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 200rem;
+    text-align: center;
+    background-color: #e939cb;
+
+}
+
+.current-skills {
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 28rem;
+    text-align: center;
+    background-color: #f834d7;
+    border-radius: 50px;
+    border-color: pink;
+    padding: 15px;
+}
+
+.learning-skills {
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 28rem;
+    text-align: center;
+    background-color: #f834d7;
+    border-radius: 50px;
+    border-color: pink;
+    padding: 15px;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.input-field {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: white;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.button-save {
+    background-color: #16a34a; /* Green */
+}
+
+.button-edit {
+    background-color: #3b82f6; /* Blue */
+}
+
+.button-add-teach {
+    background-color: #3b82f6; /* Green */
+}
+
+.button-add-teach:hover {
+    background-color: green; /* Green */
+}
+
+.button-add-learn {
+    background-color: #3b82f6; /* Blue */
+}
+
+.button-add-learn:hover {
+    background-color: green; /* Blue */
+}
+
+.button-logout {
+    background-color: #dc2626; /* Red */
+    margin-top: 1.5rem;
+}
+
+.skill-list {
+    margin-bottom: 0.5rem;
+}
+
+.skill-item {
+    font-size: 1.125rem;
+}

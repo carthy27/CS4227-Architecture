@@ -1,0 +1,29 @@
+.SkillSwapLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #802c2c;
+}
+
+.heading{
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 28rem;
+    text-align: center;
+    background-color: #e939cb;
+    border-radius: 50px;
+    border-color: pink;
+    padding: 15px;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #802c2c;
+    
+}
