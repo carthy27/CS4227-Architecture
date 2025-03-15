@@ -7,7 +7,7 @@ export default function App() {
   return (
     <Router basename="/CS4227-Architecture">
           <Routes>
-                <Route path="/login" element={<Login />} />
+                <Route path="/" element={<Login />} />
                 <Route  path="/profile"  element={
                     <AuthGuard>
                       <Profile />
