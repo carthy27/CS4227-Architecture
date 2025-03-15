@@ -63,15 +63,6 @@ export default function Profile() {
     setIsEditing(false);
   };
 
-  const handleLogout = async () => {
-    await logout();
-    navigate("/");
-  };
-
-  const toLoginPage = async () => {
-    navigate("/");
-  }
-
   if (!user) return <p>Loading...</p>;
 
   return (

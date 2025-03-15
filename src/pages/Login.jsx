@@ -1,7 +1,6 @@
-import { auth, signInWithGoogle } from "../firebase"; 
+import { signInWithGoogle } from "../firebase"; 
 import { useNavigate } from "react-router-dom"; 
 import { useState } from "react"; // Import useState for handling errors
-import { LogIn,Gavel,Hammer  } from 'lucide-react'; // Import the LogIn icon from lucide-react
 import CurrentSkills from "../components/CurrentSkills";
 import LearningSkills from "../components/LearningSkills";
 export default function Login() {
