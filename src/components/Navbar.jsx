@@ -16,7 +16,7 @@ export default function AdminAppBar() {
     const handleDrawerClose = () => {
         setDrawerOpen(false);
     };
-    const NavBar = ({ loading, error, handleLogin }) => {
+
     return (
         <>
             <AppBar sx={{ bgcolor: '#f7232a'}}>
@@ -70,5 +70,4 @@ export default function AdminAppBar() {
             </Drawer>
         </>
     );
-  };
 }

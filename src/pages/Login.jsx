@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react"; // Import useState for handling errors
 import CurrentSkills from "../components/CurrentSkills";
 import LearningSkills from "../components/LearningSkills";
-import Navbar from "../components/Navbar";
+import AdminAppBar from "../components/Navbar";
 import LoginComp from "../components/LoginComp";
 
 export default function Login() {
@@ -32,7 +32,7 @@ export default function Login() {
 
   return (
     <div>
-      <Navbar />
+      <AdminAppBar />
       <LoginComp  loading={loading} error={error} handleLogin={handleLogin}/>
       <CurrentSkills loading={loading} error={error} handleLogin={handleLogin} />
       <LearningSkills loading={loading} error={error} handleLogin={handleLogin} />

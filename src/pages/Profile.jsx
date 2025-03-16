@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { getUserData, updateUserSkills, updateUserProfile } from "../models/userModel";
 import "../styles/Profile.css"; // Import the CSS file
 import { Hammer,Gavel } from 'lucide-react';
-import Navbar from "../components/Navbar";
+import AdminAppBar from "../components/Navbar";
 export default function Profile() {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
@@ -67,7 +67,7 @@ export default function Profile() {
 
   return (
     <div className="full-screen">
-      <Navbar />
+      <AdminAppBar />
       {/* Profile Editing Section */}
       <div className="section-container">
        <div className="profile">
