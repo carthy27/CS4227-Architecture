@@ -71,7 +71,7 @@ export default function Profile() {
       {/* Profile Editing Section */}
       <div className="section-container">
        <div className="profile">
-          <h1 classname="profile-title">{name}</h1>
+          <h1 className="profile-title">{name}</h1>
          <img src={user.photoURL} alt="Profile" className="profile-picture" />
           <h2 className="section-title">Profile Info</h2>
           {isEditing ? (

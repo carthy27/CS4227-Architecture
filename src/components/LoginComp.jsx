@@ -1,4 +1,5 @@
-import { LogIn} from "lucide-react";
+  import { ArrowBigRightDash} from "lucide-react";
+
 
 const LoginComp = ({ loading, error, handleLogin }) => {
     return (
@@ -16,7 +17,8 @@ const LoginComp = ({ loading, error, handleLogin }) => {
           onClick={handleLogin}
           className="bg-white text-black px-4 py-2 rounded flex items-center"
         >
-          <LogIn />
+          <p className="mr-2">Sign in here</p>
+          <ArrowBigRightDash />
         </button>
         </div>
     )
