@@ -26,7 +26,7 @@ export default function AdminAppBar() {
                             <MenuIcon/>
                         </IconButton>
                         <Typography fontWeight="bold" variant="h6" style={{ color: 'black'}}>
-                            User Management
+                            Login Page
                         </Typography>
                     </div>
                     <Typography fontWeight="bold" variant="h6" style={{ color: 'black'}}>
