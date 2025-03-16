@@ -5,7 +5,6 @@ import CurrentSkills from "../components/CurrentSkills";
 import LearningSkills from "../components/LearningSkills";
 import AdminAppBar from "../components/Navbar";
 import LoginComp from "../components/LoginComp";
-import './styles/Profile.css'; // Ensure the CSS file is imported
 
 export default function Login() {
   const navigate = useNavigate();
@@ -32,7 +31,7 @@ export default function Login() {
   
 
   return (
-    <div className="login-container">
+    <div>
       <AdminAppBar />
       <LoginComp  loading={loading} error={error} handleLogin={handleLogin}/>
       <CurrentSkills loading={loading} error={error} handleLogin={handleLogin} />
