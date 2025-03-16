@@ -42,19 +42,20 @@ const signInWithGoogle = async () => {
       console.log("User data before saving:", {
         name: user.displayName,
         email: user.email,
-        role: user.role,
-        school: user.school,
+        role: user.role || "user", // Default role if undefined
+        school: user.school || "N/A", // Default school if undefined
         photo: user.photoURL,
         skills: [], // Empty skills array
         skillsToLearn: [],
-        createdAt: new Date(), // Check if role is undefined
+        createdAt: new Date(),
       });
+
       // Store new user in Firestore
       await setDoc(userRef, {
         name: user.displayName,
         email: user.email,
-        role: user.role,
-        school: user.school,
+        role: user.role || "user", // Default role if undefined
+        school: user.school || "N/A", // Default school if undefined
         photo: user.photoURL,
         skills: [], // Empty skills array
         skillsToLearn: [],
