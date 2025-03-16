@@ -1,9 +1,9 @@
-  import { ArrowBigRightDash} from "lucide-react";
-
+import { ArrowBigRightDash} from "lucide-react";
+import "../styles/Login.css";
 
 const LoginComp = ({ loading, error, handleLogin }) => {
     return (
-      <div className="login-container">
+      <div className="login-container ">
         <h1 className="heading">Skill Swap</h1>
   
         {/* Display loading state */}

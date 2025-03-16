@@ -1,14 +1,5 @@
-.SkillSwapLogin{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #802c2c;
-}
-
 .heading{
-    margin-top: 1.5rem;
+    margin-top: 50px;
     width: 100%;
     max-width: 28rem;
     text-align: center;
@@ -19,11 +10,9 @@
 }
 
 .login-container{
-    margin-top: 100px; /* Moves the container down by 100 pixels */
+    margin-top: 50px; /* Moves the container down by 100 pixels */
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #802c2c;
     
 }

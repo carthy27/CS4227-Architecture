@@ -1,5 +1,5 @@
 import { Hammer } from "lucide-react";
-
+import "../styles/Profile.css";
 const CurrentSkills = ({ loading, error, handleLogin }) => {
   return (
     <div className="login-container">
