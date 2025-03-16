@@ -89,7 +89,7 @@ body, html {
     width: 100%;
     max-width: 200rem;
     text-align: center;
-    background-color: #e939cb;
+    background-color: #f7232a;
 
 }
 
@@ -98,7 +98,7 @@ body, html {
     width: 100%;
     max-width: 28rem;
     text-align: center;
-    background-color: #f834d7;
+    background-color: #f7232a;
     border-radius: 50px;
     border-color: pink;
     padding: 15px;
@@ -109,7 +109,7 @@ body, html {
     width: 100%;
     max-width: 28rem;
     text-align: center;
-    background-color: #f834d7;
+    background-color: #f7232a;
     border-radius: 50px;
     border-color: pink;
     padding: 15px;
@@ -171,4 +171,12 @@ body, html {
 
 .skill-item {
     font-size: 1.125rem;
+}
+
+.login-container{
+    margin-top: 100px; /* Moves the container down by 100 pixels */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
