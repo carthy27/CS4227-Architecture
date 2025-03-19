@@ -11,7 +11,8 @@ export default function Login() {
   const [error, setError] = useState(null);  // State for storing errors
   const [loading, setLoading] = useState(false);  // State for loading indicator
 
- const handleLogin = async () => {
+  const handleLogin = async () => {
+    if (loading) return; // Prevent multiple clicks
     setLoading(true); // Start loading indicator
     setError(null);   // Clear any previous error
 
@@ -28,12 +29,11 @@ export default function Login() {
       setLoading(false); // Stop loading indicator after sign-in attempt
     }
   };
-  
 
   return (
     <div>
       <AdminAppBar />
-      <LoginComp  loading={loading} error={error} handleLogin={handleLogin}/>
+      <LoginComp loading={loading} error={error} handleLogin={handleLogin} />
       <CurrentSkills loading={loading} error={error} handleLogin={handleLogin} />
       <LearningSkills loading={loading} error={error} handleLogin={handleLogin} />
     </div>

@@ -65,7 +65,11 @@ const signInWithGoogle = async () => {
 
     return user;
   } catch (error) {
-    console.error("Google Sign-In Error:", error);
+    if (error.code === "auth/cancelled-popup-request") {
+      console.warn("Popup request was canceled. Ignoring this error.");
+    } else {
+      console.error("Google Sign-In Error:", error);
+    }
   }
 };
 
