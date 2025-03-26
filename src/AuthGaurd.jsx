@@ -5,7 +5,9 @@ import { useEffect, useState } from "react";
 export default function AuthGuard({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-
+  AuthGuard.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       setUser(user);

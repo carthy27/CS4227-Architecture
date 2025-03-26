@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";  // Import auth functions
 import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";  // Import Firestore functions
-// TODO: Add SDKs for Firebase products that you want to use
+
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration

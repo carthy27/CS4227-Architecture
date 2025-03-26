@@ -1,6 +1,11 @@
 import { Hammer } from "lucide-react";
 import "../styles/Profile.css";
 const CurrentSkills = ({ loading, error, handleLogin }) => {
+  CurrentSkills.propTypes = {
+    loading: PropTypes.bool.isRequired,
+    error: PropTypes.string,
+    handleLogin: PropTypes.func.isRequired
+  }
   return (
     <div className="login-container">
       {/* Skills Section */}
