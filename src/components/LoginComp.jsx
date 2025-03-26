@@ -1,5 +1,5 @@
 import { ArrowBigRightDash} from "lucide-react";
-import "../styles/Login.css";
+import "../styles/LoginComp.css";
 
 const LoginComp = ({ loading, error, handleLogin }) => {
     return (
